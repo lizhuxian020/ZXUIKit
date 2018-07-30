@@ -1,8 +1,8 @@
 {
   "name": "ZXUIKit",
   "version": "0.1.0",
-  "summary": "A short description of ZXUIKit.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A meanful summary of ZXUIKit.",
+  "description": "this is lzx UIKIT, remember, longer than summary",
   "homepage": "https://github.com/lizhuxian020@gmail.com/ZXUIKit",
   "license": {
     "type": "MIT",
@@ -18,5 +18,19 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ZXUIKit/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "Interface",
+      "source_files": "ZXUIKit/Classes/ZXUIKit/ZXUIKit.h",
+      "dependencies": {
+        "ZXUIKit/Module": [
+
+        ]
+      }
+    },
+    {
+      "name": "Module",
+      "source_files": "ZXUIKit/Classes/ZXUIKit/**/*.{h,m}"
+    }
+  ]
 }

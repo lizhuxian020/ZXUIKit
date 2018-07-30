@@ -16,11 +16,13 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+ZXUIKit/Example/Pods/*
 
 ## Other
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap

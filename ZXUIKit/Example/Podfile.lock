@@ -4,7 +4,12 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ZXUIKit (0.1.0)
+  - ZXUIKit (0.1.0):
+    - ZXUIKit/Interface (= 0.1.0)
+    - ZXUIKit/Module (= 0.1.0)
+  - ZXUIKit/Interface (0.1.0):
+    - ZXUIKit/Module
+  - ZXUIKit/Module (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +25,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ZXUIKit: 84c85180aa30accf0fcad4697265e69fed46d0ed
+  ZXUIKit: 66a8a5ef838fcb8b0b63dce37ed6216abc3c46d8
 
 PODFILE CHECKSUM: cfa4ed33a8fba18c53a8e7c63628b0f499e56459
 
