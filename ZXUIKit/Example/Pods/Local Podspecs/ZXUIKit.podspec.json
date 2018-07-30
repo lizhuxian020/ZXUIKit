@@ -1,0 +1,22 @@
+{
+  "name": "ZXUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of ZXUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lizhuxian020@gmail.com/ZXUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lizhuxian020@gmail.com": "lizhuxian020@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lizhuxian020@gmail.com/ZXUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZXUIKit/Classes/**/*"
+}
