@@ -7,12 +7,19 @@
 //
 
 #import "ZXAppDelegate.h"
+#import "ZXViewController.h"
+#import <ZXUiKit/CrashCatcher.h>
 
 @implementation ZXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:ZXViewController.new];
+    [self.window makeKeyAndVisible];
+    
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     return YES;
 }
 

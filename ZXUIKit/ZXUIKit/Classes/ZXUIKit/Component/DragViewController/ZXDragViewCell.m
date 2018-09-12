@@ -27,7 +27,7 @@
 - (void)setUp {
     _title = [[UILabel alloc] init];
     [self.contentView addSubview:_title];
-    _title.zx_size = CGSizeMake(80, 40);
+    _title.size = CGSizeMake(80, 40);
     [_title mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.contentView);
         make.centerY.equalTo(self.contentView);

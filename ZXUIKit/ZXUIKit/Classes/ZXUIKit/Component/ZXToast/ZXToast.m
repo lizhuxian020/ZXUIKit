@@ -37,8 +37,8 @@
 //    [container addSubview:lbl];
     
     //黑色框框大小
-    bg_view.zx_width = lbl.zx_width + 30;
-    bg_view.zx_height = lbl.zx_height + 20;
+    bg_view.width = lbl.width + 30;
+    bg_view.height = lbl.height + 20;
     
     //黑色框框位置
     bg_view.center = keyWin.center;
@@ -48,15 +48,15 @@
             y = 30;
             break;
         case ZXToastPosition_Center:
-            y = bg_view.zx_y;
+            y = bg_view.y;
             break;
         case ZXToastPosition_Bottom:
         default:
-            y = kScreenH - bg_view.zx_height - 30;
+            y = kScreenHeight - bg_view.height - 30;
             break;
     }
-    bg_view.zx_y = y;
-    lbl.center = CGPointMake(bg_view.zx_width / 2, bg_view.zx_height / 2);
+    bg_view.y = y;
+    lbl.center = CGPointMake(bg_view.width / 2, bg_view.height / 2);
     
     //动画
     [UIView animateWithDuration:duration animations:^{

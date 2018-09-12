@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 # s.source_files = 'ZXUIKit/Classes/**/*'
   
   s.subspec 'Interface' do |inter|
-      inter.source_files = 'ZXUIKit/Classes/ZXUIKit/ZXUIKit.h'
+      inter.source_files = 'ZXUIKit/Classes/Interface/ZXUIKit.h'
       inter.dependency 'ZXUIKit/Module'
   end
   
@@ -44,7 +44,10 @@ Pod::Spec.new do |s|
   #   'ZXUIKit' => ['ZXUIKit/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+#  s.public_header_files = 'ZXUIKit/Classes/Interface/ZXUIKit.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.resource = "ZXUIKit/Classes/ZXUIKit/**/*.{xib,sqlite}"
+  s.prefix_header_file = 'ZXUIKit/Classes/PrefixHeader.h'
+   s.dependency 'Masonry'
+   s.dependency 'CocoaLumberjack'
 end

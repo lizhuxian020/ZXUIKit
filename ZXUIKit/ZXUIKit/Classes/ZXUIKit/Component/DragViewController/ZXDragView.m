@@ -76,7 +76,7 @@
     
     //创建可移动的tempCell
     UIView *tempCell = [self renderView:_targetCell];
-    tempCell.zx_size = CGSizeMake(tempCell.zx_width + 10, tempCell.zx_height + 10);
+    tempCell.size = CGSizeMake(tempCell.width + 10, tempCell.height + 10);
     [self addSubview:tempCell];
     _tempMoveCell = tempCell;
     [self startShake:_tempMoveCell level:1];
@@ -212,7 +212,7 @@
 - (BOOL)hasInHeaderView:(CGPoint)point callback:(void (^)(NSIndexPath *))callback {
     NSArray *headerArr = [self visibleSupplementaryViewsOfKind:UICollectionElementKindSectionHeader];
     headerArr = [headerArr sortedArrayUsingComparator:^NSComparisonResult(UIView *obj1, UIView *obj2) {
-        if (obj1.zx_y > obj2.zx_y) {
+        if (obj1.y > obj2.y) {
             return NSOrderedDescending;
         }
         return NSOrderedAscending;
@@ -246,7 +246,7 @@
         NSInteger y = point.y;
         
         NSArray *headerViewsArr = [[self visibleSupplementaryViewsOfKind:UICollectionElementKindSectionHeader] sortedArrayUsingComparator:^NSComparisonResult(UIView *obj1, UIView *obj2) {
-            if (obj1.zx_y > obj2.zx_y) {
+            if (obj1.y > obj2.y) {
                 return NSOrderedDescending;
             }
             return NSOrderedAscending;
@@ -254,7 +254,7 @@
         
         __block NSInteger section = 0;
         [headerViewsArr enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(UIView *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if (y >= obj.zx_y) {
+            if (y >= obj.y) {
                 section = idx;
                 *stop = true;
             }
