@@ -19,6 +19,10 @@
 #import "ZXDragViewController.h"
 #import "ZXBlurryView.h"
 #import "ZXToast.h"
+#import "ZXCoreBottomView.h"
+#import "ZXTabPopView.h"
+#import "ZXTextPopView.h"
+#import "ZXIconTextView.h"
 
 
 /* ================== Category ==================*/
@@ -34,7 +38,9 @@
 
 
 /* ================== Utils ==================*/
+#import "ZXUIKitManager.h"
 #import "LogFormatter.h"
+#import "ZXCommonTools.h"
 
 /* ================== Dependent ==================*/
 #import "AESCipher.h"

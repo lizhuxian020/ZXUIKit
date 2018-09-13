@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define kShowToast(message) [ZXToast showToast:message duration:ZXToastPosition_Center]
+
 typedef NS_ENUM(NSInteger, ZXToastPosition) {
     ZXToastPosition_Top,
     ZXToastPosition_Center,

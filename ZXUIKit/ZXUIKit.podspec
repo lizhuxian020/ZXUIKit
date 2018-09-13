@@ -48,6 +48,8 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   s.resource = "ZXUIKit/Classes/ZXUIKit/**/*.{xib,sqlite}"
   s.prefix_header_file = 'ZXUIKit/Classes/PrefixHeader.h'
-   s.dependency 'Masonry'
-   s.dependency 'CocoaLumberjack'
+  s.dependency 'Masonry'
+  s.dependency 'CocoaLumberjack'
+  s.dependency 'CJLabel'
+  s.dependency 'IQKeyboardManager'
 end

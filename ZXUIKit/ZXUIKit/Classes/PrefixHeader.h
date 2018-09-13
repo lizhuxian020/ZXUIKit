@@ -16,10 +16,16 @@
 
 /* ================== Category ==================*/
 #import "UIView+Extension.h"
+#import "NSString+Extension.h"
+#import "UIImage+Extension.h"
 
 /* ================== Other ==================*/
 #import "ZXUIKitManager.h"
+#import "ZXView.h"
+#import "ZXCommonTools.h"
+#import "ZXToast.h"
 
 /* ================== Dependent ==================*/
 #import "Masonry.h"
 #import <CocoaLumberjack/CocoaLumberjack.h>
+#import "IQKeyboardManager.h"

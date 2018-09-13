@@ -27,6 +27,7 @@
 
 #define kRGB(r, g, b)                        [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:1.f]
 #define kRGBA(r, g, b, a)                    [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define KSELF                                __weak typeof(self) kself = self;
 
 //通用
 #define kBackgroundColor             kRGB(244,244,244)
@@ -34,6 +35,7 @@
 #define kTextColorAleartView         kRGB(51,51,51)
 #define kMainYellow                  kRGB(255,174,0)
 #define kLessGray                    kRGB(153,153,153)
+#define kLightGaryColor              UIColor.lightGrayColor
 
 //字体
 #define ZXFont(_FontSize_)                            [UIFont systemFontOfSize:_FontSize_]

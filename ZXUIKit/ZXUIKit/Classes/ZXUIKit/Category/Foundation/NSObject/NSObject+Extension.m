@@ -9,8 +9,5 @@
 
 @implementation NSObject (Extension)
 
-- (BOOL)isEmpty {
-    return NO;
-}
 
 @end

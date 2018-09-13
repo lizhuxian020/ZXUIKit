@@ -12,7 +12,7 @@
 
 
 + (void)showToast:(NSString *)message duration:(float)duration {
-    [self showToast:message duration:duration postion:ZXToastPosition_Bottom];
+    [self showToast:message duration:duration postion:ZXToastPosition_Center];
 }
 
 + (void)showToast:(NSString *)message duration:(float)duration postion:(ZXToastPosition)position {
