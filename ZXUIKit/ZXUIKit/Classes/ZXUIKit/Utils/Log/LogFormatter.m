@@ -11,6 +11,7 @@
 
 
 +(void)load {
+    if (!ZXUIKitManager.shareManager.logEnable) return;
     LogFormatter *formatter = [LogFormatter new];
     
     // 添加DDASLLogger，你的日志语句将被发送到Xcode控制台

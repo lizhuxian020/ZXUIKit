@@ -17,6 +17,9 @@
 /* ================== Category ==================*/
 #import "UIView+Extension.h"
 
+/* ================== Other ==================*/
+#import "ZXUIKitManager.h"
+
 /* ================== Dependent ==================*/
 #import "Masonry.h"
 #import <CocoaLumberjack/CocoaLumberjack.h>
