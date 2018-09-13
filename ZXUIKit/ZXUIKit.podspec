@@ -52,4 +52,6 @@ Pod::Spec.new do |s|
   s.dependency 'CocoaLumberjack'
   s.dependency 'CJLabel'
   s.dependency 'IQKeyboardManager'
+  s.dependency 'AFNetworking', '~> 3.1.0'
+  s.dependency 'SVProgressHUD', '~> 2.2.5'
 end

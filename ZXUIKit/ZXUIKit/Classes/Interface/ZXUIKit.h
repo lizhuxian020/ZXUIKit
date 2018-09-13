@@ -41,7 +41,9 @@
 #import "ZXUIKitManager.h"
 #import "LogFormatter.h"
 #import "ZXCommonTools.h"
+#import "ZXRequest.h"
 
 /* ================== Dependent ==================*/
 #import "AESCipher.h"
+#import "SVProgressHUD.h"
 //#import "Masonry.h"

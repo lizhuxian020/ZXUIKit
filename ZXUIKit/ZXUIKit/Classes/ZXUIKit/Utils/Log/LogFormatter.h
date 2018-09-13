@@ -16,4 +16,6 @@ static const DDLogLevel ddLogLevel = DDLogLevelError;
 
 @interface LogFormatter : NSObject<DDLogFormatter>
 
++(void)startLog;
+
 @end
