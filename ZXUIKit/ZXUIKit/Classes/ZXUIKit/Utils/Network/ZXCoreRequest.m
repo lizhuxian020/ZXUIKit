@@ -31,8 +31,7 @@
 ////    [securityPolicy setValidatesDomainName:NO];
 ////    securityPolicy.allowInvalidCertificates = YES; //还是必须设成YES
 //    manager.securityPolicy = securityPolicy;
-    
-    ZXLog(@"请求参数:url===>%@ \n parameters===>%@",url, [NSString JSONStringWithObject:params]);
+    ZXLog(@" \n ================ Request_Info ================ \n\tURL===>%@\n\tParam===>%@",url,[NSString JSONStringWithObject:params]);
     [manager GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         NSString *json = [NSString JSONStringWithObject:responseObject];
         ZXLog(@" \n ================ responseObject_SUCCESS ================ \n%@",json);
