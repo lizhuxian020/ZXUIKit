@@ -35,7 +35,8 @@
 #import "NSArray+Swizzle.h"
 #import "NSObject+Extension.h"
 #import "NSString+Extension.h"
-
+#import "NSString+Compare.h"
+#import "NSString+PinYin.h"
 
 /* ================== Utils ==================*/
 #import "ZXUIKitManager.h"

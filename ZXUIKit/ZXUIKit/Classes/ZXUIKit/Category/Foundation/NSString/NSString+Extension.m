@@ -73,13 +73,12 @@ static NSString * const AESKEY = @"wsAc78qwnb34cvs8";
     }
     
     NSString *jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
-    NSMutableString *mutStr = [NSMutableString stringWithString:jsonString];
     
-    [mutStr replaceOccurrencesOfString:@" " withString:@"" options:NSLiteralSearch range:NSMakeRange(0, mutStr.length)];
-
-    [mutStr replaceOccurrencesOfString:@"\n" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, mutStr.length)];
+    NSString *str =[jsonString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    return mutStr;
+    str = [str stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    
+    return str;
 }
 
 - (NSString *)stringWithoutWhiteSpace {
