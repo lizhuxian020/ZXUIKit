@@ -7,7 +7,7 @@
 //
 
 #import "ZXIconTextView.h"
-#import <CJLabel.h>
+#import "CJLabel.h"
 
 //#define iconTextMargin pixelToPoint(24)
 //#define textSubTextMargin pixelToPoint(8)

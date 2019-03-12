@@ -46,5 +46,5 @@
 
 /* ================== Dependent ==================*/
 #import "AESCipher.h"
-#import "SVProgressHUD.h"
+//#import "SVProgressHUD.h"//不知道为什么放开就不行..没空管.得闲再研究
 //#import "Masonry.h"

@@ -32,3 +32,4 @@
 #import "IQKeyboardManager.h"
 #import "AFNetworking.h"
 #import "SVProgressHUD.h"
+#import "CJLable.h"
